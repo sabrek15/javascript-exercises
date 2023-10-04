@@ -1,7 +1,12 @@
 const sumAll = function(a, b) {
     let sum = 0;
-    for(let i=a; i<=b; i++){
-        sum += i;
+    if(a.isnum()&&b.isnum()){
+        for(let i=a; i<=b; i++){
+            sum += i;
+        }
+        return sum;
+    } else {
+        return "ERROR!";
     }
     return sum;
 };
